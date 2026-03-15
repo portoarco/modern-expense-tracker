@@ -1,10 +1,14 @@
+import Dashboard from "@/pages/dashboard";
+import Login from "@/pages/login";
+import Register from "@/pages/register";
 import { Route, Routes } from "react-router-dom";
-import Home from "../pages/home";
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" Component={Home} />
+      <Route path="/" Component={Login} />
+      <Route path="/register" Component={Register} />
+      <Route path="/dashboard" Component={Dashboard} />
     </Routes>
   );
 };
