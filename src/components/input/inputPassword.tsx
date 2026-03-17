@@ -5,7 +5,7 @@ const InputPassword = ({
   className,
   ...props
 }: React.ComponentProps<"input">) => {
-  const [password, setPassword] = useState(false);
+  const [password, setPassword] = useState(true);
   return (
     <div className="relative">
       <input

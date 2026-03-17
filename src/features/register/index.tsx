@@ -1,10 +1,11 @@
 import Input from "@/components/input/input";
 import { Button } from "@/components/ui/button";
 import { FaArrowCircleRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CompanyLogo from "../../assets/logo-long.webp";
 import InputPassword from "@/components/input/inputPassword";
 const RegisterComponent = () => {
+  const navigate = useNavigate();
   return (
     <main className="min-h-screen  flex flex-col items-center justify-center p-2">
       <section className="w-full max-w-md bg-white/70 backdrop-blur-xl px-8 rounded-[2.5rem]   ">
@@ -68,6 +69,7 @@ const RegisterComponent = () => {
   before:translate-x-[-200%] hover:before:translate-x-[200%] 
   before:transition-transform before:duration-700 cursor-pointer
 "
+            onClick={() => navigate("/verify-otp")}
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
               Register New Account
